@@ -76,7 +76,6 @@ const SignUpPage = () => {
       toast({
         title: "Success",
         description: "Form submitted successfully",
-        variant: "success",
       });
     }
   };
