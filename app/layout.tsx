@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Roboto, Montserrat } from "next/font/google";
 import "./globals.css";
 import { ChildProps } from "@/types";
-import { ThemeProvider } from "@/components/providers/theme-provide";
 import { Toaster } from "@/components/ui/toaster";
 
 const roboto = Roboto({

@@ -10,14 +10,14 @@ const FilterForm = () => {
     skillLevel: ''
   });
 
-  const [courseDatas, setCourseDatas] = useState([
+  const courseDatas = [
     { title: "Kurs 1", category: "Frontend", date: "2025-02-06", price: "$100" },
     { title: "Kurs 2", category: "Backend", date: "2025-02-07", price: "$150" },
     { title: "Kurs 3", category: "Backend", date: "2025-02-08", price: "$200" },
     { title: "Kurs 1", category: "Frontend", date: "2025-02-06", price: "$100" },
     { title: "Kurs 2", category: "Full Stack", date: "2025-02-07", price: "$150" },
     { title: "Kurs 3", category: "Telegram Bot", date: "2025-02-08", price: "$200" },
-  ]);
+  ]
 
   const handleCheckboxChange = (e: React.ChangeEvent<HTMLInputElement>, group: string): void => {
     const { name, checked } = e.target;
@@ -184,7 +184,7 @@ const FilterForm = () => {
           </ul>
         </div>
         <div>
-          <h3 className="font-semibold">Ko'nikma darajasi</h3>
+          <h3 className="font-semibold">Ko&apos;nikma darajasi</h3>
           <ul className="space-y-2">
             <li>
               <label className="flex items-center space-x-2">
@@ -195,7 +195,7 @@ const FilterForm = () => {
                   onChange={(e) => handleCheckboxChange(e, 'skillLevel')}
                   className="form-checkbox"
                 />
-                <span>Boshlang'ich</span>
+                <span>Boshlang&apos;ich</span>
               </label>
             </li>
             <li>
@@ -207,7 +207,7 @@ const FilterForm = () => {
                   onChange={(e) => handleCheckboxChange(e, 'skillLevel')}
                   className="form-checkbox"
                 />
-                <span>O'rtacha</span>
+                <span>O&apos;rtacha</span>
               </label>
             </li>
             <li>
